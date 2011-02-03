@@ -1,0 +1,12 @@
+<ul class="projects">
+    {#rows}
+    <li>
+        {#doc}
+        <h2><a href="{url}">{name}</a></h2>
+        <div class="tagline">{tagline}</div>
+        {description_html|s}
+        <p><a href="{url}">Read more →</a></p>
+        {/doc}
+    </li>
+    {/rows}
+</ul>

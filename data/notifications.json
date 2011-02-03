@@ -1,0 +1,10 @@
+{
+    "_id": "583da115697842a1f86bd2ed69002f2c",
+    "published": true,
+    "type": "blogpost",
+    "pubdate": "Mon, 28 Sep 2009 22:05:18 +0100",
+    "title": "Ubuntu Notifications in Javascript",
+    "slug": "ubuntu_notifications_in_javascript",
+    "intro": "There are a whole bunch of growl-like plugins for jQuery, but I'm a real fan of the new Ubuntu notifications introduced in Jaunty (see: [http://www.markshuttleworth.com/archives/253](http://www.markshuttleworth.com/archives/253)). So, I decided to create a plugin which imitates these instead.",
+    "markdown": "There are a whole bunch of growl-like plugins for jQuery, but I'm a real fan of the new Ubuntu notifications introduced in Jaunty (see: [http://www.markshuttleworth.com/archives/253](http://www.markshuttleworth.com/archives/253)). So, I decided to create a plugin which imitates these instead.\n\nThe hardest part was getting the click-through to work nicely, requiring me to create custom mouseover and mouseout events. There are still some issues to address, such as rounded corners for Opera, but there is enough in place to test the idea out. I wouldn't recommend using this in production yet, as only FF3, IE7 and IE6 have been tested as working.\n\n[Get the code](http://github.com/caolan/jquery.notify.js) or [see the plugin in action!]({baseURL}/files/jquery.notify.js/examples/index.html)"
+}

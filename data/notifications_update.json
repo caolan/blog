@@ -1,0 +1,10 @@
+{
+    "_id": "583da115697842a1f86bd2ed6900b0ac",
+    "published": true,
+    "type": "blogpost",
+    "pubdate": "Thu, 01 Oct 2009 19:03:45 +0100",
+    "title": "Notifications Update",
+    "slug": "notifications_update",
+    "intro": "Just announcing a few bug fixes to the Ubuntu notifications plugin for jQuery. The plugin should now work on Firefox 2+, IE 6+, Safari and Opera. This mostly relied on removing the reliance on getBoundingClientRect() and introducing SVG-based rounded corners as a fall-back for Opera.",
+    "markdown": "Just announcing a few bug fixes to the Ubuntu notifications plugin for jQuery. The plugin should now work on Firefox 2+, IE 6+, Safari and Opera. This mostly relied on removing the reliance on getBoundingClientRect() and introducing SVG-based rounded corners as a fall-back for Opera.\n\nI'd appreciate more testing though, so if you get chance please play around with the examples, and let me know if you have any problems."
+}

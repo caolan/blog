@@ -1,0 +1,9 @@
+{
+    "_id": "a21b038ac7938c45ea910e43c30015ba",
+    "published": true,
+    "type": "project",
+    "name": "Dispatch",
+    "url": "http://github.com/caolan/dispatch",
+    "tagline": "A regular expression URL dispatcher for Connect",
+    "description": "A really simple URL dispatcher for [Connect](http://github.com/senchalabs/connect). Allows arbitrarily nested regular expressions for matching URLs and calling an associated function."
+}

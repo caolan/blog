@@ -1,0 +1,10 @@
+{
+    "_id": "4c3d9eb12253429b90f16ee6ee000c62",
+    "published": true,
+    "type": "blogpost",
+    "pubdate": "Tue, 31 Jul 2010 15:54:00 +0100",
+    "title": "Multiple Set-Cookie headers in node.js",
+    "slug": "multiple_set_cookie_headers_in_node_js",
+    "intro": "Sometimes you want to send the same header twice in the same response, such as\nsetting two cookies at once. But how can this be achieved when HTTP headers\nare passed to writeHead as an object and it's not possible to have the same\nkey twice? The answer seems to be an undocumented feature of writeHead, that\nallows you to pass an array of headers instead. 'Use an array' is a little\nambiguous, so let me provide an example:",
+    "markdown": "Sometimes you want to send the same header twice in the same response, such as\nsetting two cookies at once. But how can this be achieved when HTTP headers\nare passed to writeHead as an object and it's not possible to have the same\nkey twice? The answer seems to be an undocumented feature of writeHead, that\nallows you to pass an array of headers instead. 'Use an array' is a little\nambiguous, so let me provide an example:\n\n<pre><code class=\"javascript\">res.writeHead(200, [\n    ['Set-Cookie', 'mycookie1=value1'],\n    ['Set-Cookie', 'mycookie2=value2']\n]);</code></pre>\n\nSimple enough. Another option is to attempt to combine multiple cookie\nkey-value pairs in one Set-Cookie header, but in practice you'll be running\ninto more browser incompatibilities this way.\n\nThere is, however, one important issue with this feature. __If you author any\nmiddleware__ for Connect or any other frameworks, and you proxy calls to\nwriteHead or modify headers in any other way, __you need to support headers as\nan array!__ This change seemed to have passed me by, so I thought I'd spread\nthe word a little."
+}

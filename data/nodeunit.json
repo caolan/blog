@@ -1,0 +1,9 @@
+{
+    "_id": "a21b038ac7938c45ea910e43c3001c79",
+    "published": true,
+    "type": "project",
+    "name": "Nodeunit",
+    "tagline": "Easy unit testing in node.js and the browser, based on the assert module.",
+    "url": "http://github.com/caolan/nodeunit",
+    "description": "A simple but powerful unit testing tool based on the node.js assert module. Works with both node.js and the browser."
+}

@@ -1,0 +1,9 @@
+{
+    "_id": "38fe599f350dd3bac46739633e01ae1b",
+    "published": true,
+    "type": "project",
+    "name": "Cookie-Sessions",
+    "url": "http://github.com/caolan/cookie-sessions",
+    "tagline": "Secure cookie-based session middleware for Connect",
+    "description": "A Connect middleware which stores session information in encrypted cookies. Has no server-side persistence requirements and scales more easily since it doesn't need 'sticky' sessions when load balancing"
+}

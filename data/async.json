@@ -1,0 +1,9 @@
+{
+    "_id": "a21b038ac7938c45ea910e43c3001185",
+    "published": true,
+    "type": "project",
+    "name": "Async.js",
+    "url": "http://github.com/caolan/async",
+    "tagline": "Async utilities for node and the browser",
+    "description": "Async is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript. Although originally designed for use with [node.js](http://nodejs.org), it can also be used directly in the browser."
+}

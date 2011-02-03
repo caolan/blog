@@ -1,0 +1,10 @@
+{
+    "_id": "b2d7560775b54b86543c376b0f00366c",
+    "published": true,
+    "type": "blogpost",
+    "pubdate": "Sun, 12 Jul 2009 21:24:29 +0100",
+    "title": "Erlang syntax highlighting",
+    "slug": "erlang_syntax_highlighting",
+    "intro": "For this site I wanted to use a simple syntax highlighter written in Javascript. Unfortunately, when I searched, none of the existing libraries seemed to support Erlang source code. So I descended like a vulture onto the vim syntax file and somehow mashed it into something that resembles a [GNU Source-highlight](http://www.gnu.org/software/src-highlite/) language definition.",
+    "markdown": "For this site I wanted to use a simple syntax highlighter written in Javascript. Unfortunately, when I searched, none of the existing libraries seemed to support Erlang source code. So I descended like a vulture onto the vim syntax file and somehow mashed it into something that resembles a [GNU Source-highlight](http://www.gnu.org/software/src-highlite/) language definition.\n\n    -module(hello).\n    -export([start/0]).\n    \n    start() ->\n        io:fwrite(\"Hello, world!\").\n    \nThis can then be converted for use with [SHJS](http://shjs.sourceforge.net/), which is the library I'm using to highlight the source code above. The .lang file should also work with [GNU Source-highlight](http://www.gnu.org/software/src-highlite/) and any other software using the same format, but I've not tested it.\n\n__Download:__ I've included the converted [sh_erlang.js](/files/sh_erlang.js) file for use with [SHJS](http://shjs.sourceforge.net/), as well as the original [erlang.lang](/files/erlang.lang) file (which depends on [number.lang](http://www.gnu.org/software/src-highlite/lang_files/number.lang)).\n\n__Update:__ This is now used on [erldocs.com](http://erldocs.com), which is a cool, easy to search version of the erlang.org docs, nice one [@daleharvey](http://twitter.com/daleharvey) :)"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "blog",
+    "load": "lib/app",
+    "modules": ["lib", "deps"],
+    "templates": "templates",
+    "attachments": ["static", "files"]
+}

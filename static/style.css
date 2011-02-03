@@ -1,0 +1,263 @@
+body {
+    padding: 0;
+    margin: 60px 0;
+    height: 85px;
+    color: #222222;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', verdana, geneva, sans-serif;
+    font-size: 13px;
+}
+
+#container {
+    width: 85%;
+    min-width: 580px;
+    max-width: 745px; /* 33% of 560px (content width) */
+    margin-bottom: 3em;
+}
+
+#github_ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+#content {
+    float: right;
+    width: 560px;
+}
+
+#navigation {
+    display: inline-block;
+    list-style-type: none;
+    padding: 8px 0 1.618em 0;
+    margin: 0 0 0.618em 0;
+    border-bottom: 1px dashed #ccc;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* webkit only styles */
+    #navigation {margin: -8px 0 0.618em 0;}
+}
+
+#navigation li {
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+#navigation li a, #navigation li.selected a {
+    text-decoration: none;
+    display: inline;
+    padding: 4px 8px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#navigation li.selected a {
+    color: #fff;
+    background: #222;
+}
+
+h2 {
+    font-family: 'Crimson Text', serif;
+    font-weight: normal;
+    font-size: 1.618em;
+    margin: 1.618em 0 0.09em 0;
+    padding: 0;
+}
+
+h1, .blogposts h2, .projects h2 {
+    font-family: 'Crimson Text', serif;
+    font-weight: normal;
+    font-size: 1.618em;
+    margin: 2.618em 0 0.09em 0;
+    padding: 0;
+}
+
+#about {
+    margin: 4.236em 0 0.09em 0;
+    padding: 0;
+}
+
+#avatar {
+    width: 92px;
+    height: 92px;
+    float: left;
+    margin: 0 2.618em 1.618em 0;
+    position: relative;
+    top: 0.236em;
+}
+
+
+h1 a, .blogposts h2 a, .projects h2 a {
+    text-decoration: none;
+    color: #222222;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 100%;
+    margin: 2.618em 0 0em 0;
+}
+
+.meta, .tagline {
+    color: #666;
+    /*font-size: 0.618em;*/
+    /*font-size: 0.854em;*/
+    font-size: 0.708em;
+    margin: 0 0 2.618em 0;
+    padding: 0 0 0 1px;
+    letter-spacing: 0.146em;
+    text-shadow: -1px 0 #fff;
+}
+
+.meta .date, .meta .warning {
+    padding-right: 1em;
+    border-right: 1px solid #ccc;
+}
+
+.meta .warning {
+    color: red;
+    font-weight: bold;
+}
+
+.meta .comments {
+    margin-left: 1em;
+    color: #666;
+    text-decoration: none;
+}
+
+.meta .menu {
+    list-style-type: none;
+    margin: 0 -1px 0 -1em;
+    padding: 0;
+    overflow: hidden;
+}
+
+.meta .menu li {
+    display: inline;
+    padding: 0 1em;
+    border-left: 1px solid #ccc;
+    position: relative;
+    left: -1px;
+}
+
+.meta .menu li a {
+    color: #666;
+    text-decoration: none;
+}
+
+#disqus_thread {
+    margin-top: 2.618em;
+    margin-bottom: 2.618em;
+    padding-top: 1em;
+    border-top: 1px solid #dddddd;
+}
+
+#main, #subscribe, #disqus_thread {
+    font-size: 1em;
+    line-height: 1.618;
+    word-spacing: 1px;
+    margin-bottom: 2.618em;
+}
+
+#main img {
+    max-width: 560px;
+}
+
+p {
+    margin: 1.618em 0;
+    padding: 0 2px;
+}
+
+li {
+    margin: 0.236em 0;
+}
+
+a img {
+    border: none;
+}
+
+pre, code {
+    font-family: monospace;
+    font-size: 12px;
+    color: #000;
+    line-height: 1.618;
+}
+
+pre {
+    padding: 1.618em 0 1.618em 1.618em;
+    margin: 2.618em 0;
+    border: 1px dashed #CCC;
+    border-left: 2px solid #444;
+    background-color: #F4F4F4;
+    overflow: auto;
+}
+
+pre code {
+    background-color: #F4F4F4 !important;
+}
+
+#sitename {
+    font-family: 'Crimson Text', serif;
+    font-size: 2.618em;
+    margin: 1.618em 0 1.618em 0;
+    padding: 0;
+}
+/* Firefox */
+/*@-moz-document url-prefix()
+{
+    #sitename{ letter-spacing: -0.08em; }
+}*/
+
+#sitename a {
+    color: #222;
+    text-decoration: none;
+}
+
+#subscribe {
+    padding: 2.618em 0 1em 0;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+    color: #666;
+    font-style: italic;
+    margin: 2.618em 0 0 0;
+}
+
+a.feed, a.twitter {
+    margin: 0 0 0 0.3em;
+    padding: 0 0 0 16px;
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    font-style: normal;
+}
+a.feed {
+    background-image: url(feed.png);
+}
+a.twitter {
+    background-image: url(twitter.png);
+}
+
+dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+dd {
+    margin: 0 0 0 120px;
+    padding: 0 0 0.75em 0;
+    font-size: 95%;
+}
+
+ul.blogposts, ul.blogposts li,
+ul.projects , ul.projects li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}

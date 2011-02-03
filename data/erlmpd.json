@@ -1,0 +1,10 @@
+{
+    "_id": "b2d7560775b54b86543c376b0f005ee2",
+    "published": true,
+    "type": "blogpost",
+    "pubdate": "Sun, 23 Aug 2009 0:24:50 +0100",
+    "title": "Erlmpd - An Erlang library for MPD",
+    "slug": "erlmpd_an_erlang_library_for_mpd",
+    "intro": "Just a short notice to announce the uploading of erlmpd to Github. This module implements the [MPD protocol](http://www.musicpd.org/doc/protocol/) in Erlang and was developed for a web-based MPD client I'm currently working on. Since I felt this module could potentially stand on its own two feet, I've released the source code [here](http://github.com/caolan/erlmpd/tree/master). I've also uploaded the [docs](/docs/erlmpd.html) for reference.",
+    "markdown": "Just a short notice to announce the uploading of erlmpd to Github. This module implements the [MPD protocol](http://www.musicpd.org/doc/protocol/) in Erlang and was developed for a web-based MPD client I'm currently working on. Since I felt this module could potentially stand on its own two feet, I've released the source code [here](http://github.com/caolan/erlmpd/tree/master). I've also uploaded the [docs](/docs/erlmpd.html) for reference.\n\n[MPD](http://www.musicpd.org) is a _\"flexible, powerful, server-side application for playing music\"_ - essentially allowing you to control it over a network. Pretty handy for collaboratively creating playlists or controling playback wirelessly.\n"
+}

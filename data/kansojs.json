@@ -1,0 +1,9 @@
+{
+    "_id": "38fe599f350dd3bac46739633e018730",
+    "published": true,
+    "type": "project",
+    "name": "KansoJS",
+    "url": "http://kansojs.org",
+    "tagline": "The surprisingly simple way to write CouchApps",
+    "description": "The simple idea behind Kanso is to support the design doc API in the browser. You're already defining much of the application's behaviour in the design doc, why should you have to redefine it all over again?"
+}

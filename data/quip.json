@@ -1,0 +1,9 @@
+{
+    "_id": "a21b038ac7938c45ea910e43c3002677",
+    "published": true,
+    "type": "project",
+    "name": "Quip",
+    "url": "http://github.com/caolan/quip",
+    "tagline": "A chainable API for response objects in node",
+    "description": "An exploration of a chainable API for response objects in node. Suited to quick and easy prototyping, also works as a [Connect](http://github.com/extjs/Connect) filter."
+}

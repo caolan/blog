@@ -1,0 +1,9 @@
+{
+    "_id": "a21b038ac7938c45ea910e43c3001684",
+    "published": true,
+    "type": "project",
+    "name": "Forms",
+    "url": "http://github.com/caolan/forms",
+    "tagline": "An easy way to create, parse and validate forms in node.js",
+    "description": "Constructing a good form by hand is a lot of work. Popular frameworks like Ruby on Rails and Django contain code to make this process less painful. This module is an attempt to provide the same sort of helpers for node.js."
+}

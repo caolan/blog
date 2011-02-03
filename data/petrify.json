@@ -1,0 +1,9 @@
+{
+    "_id": "38fe599f350dd3bac46739633e01c546",
+    "published": true,
+    "type": "project",
+    "name": "Petrify",
+    "url": "http://github.com/caolan/petrify",
+    "tagline": "A flexible static site generator for node.js",
+    "description": "A static site generator designed to be simple and flexible, with an original approach to iterating over collections of data. This was originally the code which generated this blog, although it has since been changed to use [KansoJS](http://kansojs.org)."
+}

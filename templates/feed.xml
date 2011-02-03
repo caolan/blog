@@ -1,0 +1,25 @@
+<rss version="2.0"> 
+    <channel> 
+        <title>Caolan McMahon</title> 
+        <link>http://www.caolanmcmahon.com</link> 
+        <description>Thoughts etc.</description> 
+        <language>en-gb</language> 
+        <pubDate>{pubdate}</pubDate> 
+ 
+        <lastBuildDate>{builddate}</lastBuildDate> 
+        <managingEditor>editor@caolanmcmahon.com</managingEditor> 
+        <webMaster>webmaster@caolanmcmahon.com</webMaster> 
+
+        {#rows}
+            {#doc}
+                <item> 
+                    <title>{title}</title> 
+                    <link>http://caolanmcmahon.com/posts/{slug}</link> 
+                    <description><![CDATA[{markdown_html|s}]]></description> 
+                    <pubDate>{pubdate}</pubDate> 
+                    <guid>{guid}</guid> 
+                </item> 
+            {/doc}
+        {/rows}
+    </channel>
+</rss>

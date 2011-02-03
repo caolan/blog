@@ -1,0 +1,9 @@
+{
+    "_id": "38fe599f350dd3bac46739633e01a039",
+    "published": true,
+    "type": "project",
+    "name": "Erlmpd",
+    "url": "http://github.com/caolan/erlmpd",
+    "tagline": "An Erlang client module for MPD",
+    "description": "A simple client library for communicating with [MPD](http://mpd.wikia.com) - \"a flexible, powerful, server-side application for playing music\""
+}
