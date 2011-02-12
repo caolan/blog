@@ -23,19 +23,13 @@
       </div>
       <div class="clear"/>
     </div>
+
     <script type="text/javascript" src="{baseURL}/static/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="{baseURL}/static/jquery.history.js"></script>
     <script type="text/javascript" src="{baseURL}/static/highlight.pack.js"></script>
-    <script type="text/javascript">
-        if (typeof JSON === 'undefined') {
-            $.getScript("{baseURL}/static/json2.js", function () {
-                $.getScript("{baseURL}/kanso.js");
-            });
-        }
-        else {
-            $.getScript("{baseURL}/kanso.js");
-        }
-    </script>
+    <script type="text/javascript" src="{baseURL}/static/json2.js"></script>
+    <script type="text/javascript" src="{baseURL}/kanso.js"></script>
+
     <script type="text/javascript"> 
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -46,10 +40,6 @@
             pageTracker._trackPageview();
         } catch(err) {}
     </script>
-    <script type="text/javascript">
-      // preload avatar for about page
-      avatar_image = new Image(); 
-      avatar_image.src = "http://www.gravatar.com/avatar/c911321821c4d7bd1b9bbadf91aa6f2e?size=92";
-    </script>
+
   </body>
 </html>
