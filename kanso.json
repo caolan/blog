@@ -3,5 +3,13 @@
     "load": "lib/app",
     "modules": ["lib", "deps"],
     "templates": "templates",
-    "attachments": ["static", "files"]
+    "attachments": ["static", "files"],
+    "dependencies": {
+        "properties": null,
+        "modules": null,
+        "settings": null,
+        "attachments": null,
+        "kanso.core": null,
+        "kanso.templates": null
+    }
 }
