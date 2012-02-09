@@ -1,12 +1,12 @@
 <ul class="projects">
-    {#rows}
+    {{#each rows}}
     <li>
-        {#doc}
-        <h2><a href="{url}">{name}</a></h2>
-        <div class="tagline">{tagline}</div>
-        {description_html|s}
-        <p><a href="{url}">Read more →</a></p>
-        {/doc}
+      {{#with doc}}
+        <h2><a href="{{url}}">{{name}}</a></h2>
+        <div class="tagline">{{tagline}}</div>
+        {{{description_html}}}
+        <p><a href="{{url}}">Read more →</a></p>
+      {{/with}}
     </li>
-    {/rows}
+    {{/each}}
 </ul>

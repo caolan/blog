@@ -1,10 +1,10 @@
-<h1><a href="{baseURL}/posts/{slug}">{title}</a></h1>
+<h1><a href="{{baseURL}}/posts/{{slug}}">{{title}}</a></h1>
 <div class="meta">
-    {?published}<span class="date">{pp_date}</span>{:else}<span class="warning">Draft</span>{/published}
+    {{#if published}}<span class="date">{{pp_date}}</span>{{else}}<span class="warning">Draft</span>{{/if}}
     <a href="#disqus_thread" class="comments">Comments</a>
 </div>
 
-{markdown_html|s}
+{{{markdown_html}}}
 
 <div id="subscribe">
     <a class="feed" href="http://feeds.feedburner.com/caolan">Subscribe to this blog</a>
@@ -16,7 +16,7 @@
     /**
     * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
     */
-    var disqus_identified = '{slug}';
+    var disqus_identified = '{{slug}}';
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://caolanmcmahon.disqus.com/embed.js';

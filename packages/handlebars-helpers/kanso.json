@@ -1,0 +1,12 @@
+{
+    "name": "handlebars-helpers",
+    "version": "0.0.5",
+    "categories": ["templating"],
+    "description": "Useful helpers for handlebars templates. Adds support for including templates by path, escaping uri components, ifequal tests etc",
+    "dependencies": {
+        "handlebars": ">=1.0.0"
+    },
+    "postprocessors": {
+        "add_helpers": "build/add_helpers"
+    }
+}

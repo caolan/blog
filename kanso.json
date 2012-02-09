@@ -1,15 +1,21 @@
 {
-    "name": "blog",
+    "name": "caolan-blog",
+    "version": "0.0.1",
+    "description": "Blog CouchApp for caolanmcmahon.com",
     "load": "lib/app",
-    "modules": ["lib", "deps"],
-    "templates": "templates",
+    "modules": ["lib"],
     "attachments": ["static", "files"],
+    "handlebars": {
+        "templates": "templates"
+    },
     "dependencies": {
         "properties": null,
         "modules": null,
         "settings": null,
         "attachments": null,
-        "kanso.core": null,
-        "kanso.templates": null
+        "handlebars": null,
+        "handlebars-helpers": null,
+        "duality-handlebars": null,
+        "showdown": null
     }
 }

@@ -4,22 +4,22 @@
         <link>http://www.caolanmcmahon.com</link> 
         <description>Thoughts etc.</description> 
         <language>en-gb</language> 
-        <pubDate>{pubdate}</pubDate> 
+        <pubDate>{{pubdate}}</pubDate> 
  
-        <lastBuildDate>{builddate}</lastBuildDate> 
+        <lastBuildDate>{{builddate}}</lastBuildDate> 
         <managingEditor>editor@caolanmcmahon.com</managingEditor> 
         <webMaster>webmaster@caolanmcmahon.com</webMaster> 
 
-        {#rows}
-            {#doc}
+        {{#each rows}}
+            {{#with doc}}
                 <item> 
-                    <title>{title}</title> 
-                    <link>http://caolanmcmahon.com/posts/{slug}</link> 
-                    <description><![CDATA[{markdown_html|s}]]></description> 
-                    <pubDate>{pubdate}</pubDate> 
-                    <guid>{guid}</guid> 
+                    <title>{{title}}</title> 
+                    <link>http://caolanmcmahon.com/posts/{{slug}}</link> 
+                    <description><![CDATA[{{{markdown_html}}}]]></description> 
+                    <pubDate>{{pubdate}}</pubDate> 
+                    <guid>{{guid}}</guid> 
                 </item> 
-            {/doc}
-        {/rows}
+            {{/with}}
+        {{/each}}
     </channel>
 </rss>

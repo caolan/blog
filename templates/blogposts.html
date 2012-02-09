@@ -1,15 +1,15 @@
 <ul class="blogposts">
-    {#rows}
-        {#value}
-        <li class="{?published}published{:else}draft{/published}">
-            <h2><a href="{baseURL}/posts/{slug}">{title}</a></h2>
-            <div class="meta">
-              {?published}<span class="date">{pp_date}</span>{:else}<span class="warning">Draft</span>{/published}
-              <a href="{baseURL}/posts/{slug}#disqus_thread" class="comments">Comments</a>
-            </div>
-            {intro_html|s}
-            <p><a href="{baseURL}/posts/{slug}">Read more...</a></p>
-        </li>
-        {/value}
-    {/rows}
+  {{#each rows}}
+    {{#with value}}
+      <li class="{{#if published}}published{{else}}draft{{/if}}">
+        <h2><a href="{{baseURL}}/posts/{{slug}}">{{title}}</a></h2>
+        <div class="meta">
+          {{#if published}}<span class="date">{{pp_date}}</span>{{else}}<span class="warning">Draft</span>{{/if}}
+          <a href="{{baseURL}}/posts/{{slug}}#disqus_thread" class="comments">Comments</a>
+        </div>
+        {{{intro_html}}}
+        <p><a href="{{baseURL}}/posts/{{slug}}">Read more...</a></p>
+      </li>
+    {{/with}}
+  {{/each}}
 </ul>
