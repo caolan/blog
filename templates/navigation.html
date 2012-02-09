@@ -1,7 +1,23 @@
 <ul id="navigation">
-    {{#each navigation}}
-        <li id="{{id}}" {{#if selected}}class="selected"{{/if}}>
-            <a href="{{url}}">{{text}}</a>
-        </li>
-    {{/each}}
+  <li id="nav_blog"{{#ifequal nav "blog"}} class="selected"{{/ifequal}}>
+    <a class="internal" href="{{baseURL}}">Blog</a>
+  </li>
+  <li id="nav_about"{{#ifequal nav "about"}} class="selected"{{/ifequal}}>
+    <a class="internal" href="{{baseURL}}/about">About</a>
+  </li>
+  <li id="nav_twitter">
+    <a href="http://twitter.com/caolan">Twitter</a>
+  </li>
+  <li id="nav_github">
+    <a href="http://github.com/caolan">Github</a>
+  </li>
+  <li id="nav_vimeo">
+    <a href="http://vimeo.com/caolan">Vimeo</a>
+  </li>
+  <!--
+  <li id="nav_lastfm">
+    <a href="http://last.fm/user/caolan">Last.fm</a>
+  </li>
+  -->
 </ul>
+

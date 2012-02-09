@@ -1,3 +1,7 @@
+{{{include "navigation.html"}}}
+
+<h1>Caolan McMahon</h1>
+
 <ul class="blogposts">
   {{#each rows}}
     {{#with value}}
@@ -5,7 +9,9 @@
         <h2><a href="{{baseURL}}/posts/{{slug}}">{{title}}</a></h2>
         <div class="meta">
           {{#if published}}<span class="date">{{pp_date}}</span>{{else}}<span class="warning">Draft</span>{{/if}}
-          <a href="{{baseURL}}/posts/{{slug}}#disqus_thread" class="comments">Comments</a>
+          <div class="extra">
+            <a href="{{baseURL}}/posts/{{slug}}#disqus_thread" class="comments">Comments and Reactions</a>
+          </div>
         </div>
         {{{intro_html}}}
         <p><a href="{{baseURL}}/posts/{{slug}}">Read more...</a></p>

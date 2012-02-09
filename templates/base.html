@@ -1,27 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<!DOCTYPE html>
+<html> 
   <head> 
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
     <title>{{title}}</title> 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/caolan" /> 
-    <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Radley' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://yandex.st/highlightjs/5.16/styles/github.min.css" />
     <link rel="stylesheet" type="text/css" href="{{baseURL}}/static/style.css" /> 
+
   </head> 
   <body> 
-    <div id="container">
-      <div id="content">
-        <a href="http://github.com/caolan">
-          <img id="github_ribbon" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" />
-        </a>
-        <h1 id="sitename"><a href="{{baseURL}}/">Caolan McMahon</a></h1>
-        {{{include "navigation.html"}}}
-        <div id="main"> 
-          {{{content}}}
-        </div>
-      </div>
-      <div class="clear"/>
+
+    <div id="content">
+      {{{content}}}
     </div>
 
     <script type="text/javascript" src="{{baseURL}}/static/jquery-1.4.2.min.js"></script>
@@ -34,6 +28,7 @@
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
     </script> 
+
     <script type="text/javascript"> 
         try{
             var pageTracker = _gat._getTracker("UA-3768580-1");

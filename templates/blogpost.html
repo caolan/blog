@@ -1,26 +1,40 @@
-<h1><a href="{{baseURL}}/posts/{{slug}}">{{title}}</a></h1>
-<div class="meta">
+{{{include "navigation.html"}}}
+
+{{#with doc}}
+  <h1>{{title}}</h1>
+
+  <div class="meta">
+    <span class="by">By</span>
+    <a class="author" href="{{baseURL}}/about">Caolan M<sup>c</sup>Mahon</a>
     {{#if published}}<span class="date">{{pp_date}}</span>{{else}}<span class="warning">Draft</span>{{/if}}
-    <a href="#disqus_thread" class="comments">Comments</a>
-</div>
+    <div class="extra">
+      <a href="#disqus_thread" class="comments">Comments and Reactions</a>
+    </div>
+  </div>
 
-{{{markdown_html}}}
+  <div class="main">
+    {{{markdown_html}}}
+  </div>
 
-<div id="subscribe">
-    <a class="feed" href="http://feeds.feedburner.com/caolan">Subscribe to this blog</a>
-    or
-    <a class="twitter" href="http://twitter.com/caolan">Follow me on Twitter</a>
-</div>
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /**
-    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
-    */
-    var disqus_identified = '{{slug}}';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://caolanmcmahon.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=caolanmcmahon">comments powered by Disqus.</a></noscript>
+  <div id="subscribe">
+      <a class="feed" href="http://feeds.feedburner.com/caolan">Subscribe to this blog</a>
+      or
+      <a class="twitter" href="http://twitter.com/caolan">Follow me on Twitter</a>
+  </div>
+
+  <div id="disqus_thread"></div>
+
+  <script type="text/javascript">
+      /**
+      * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+      */
+      var disqus_identified = '{{slug}}';
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://caolanmcmahon.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=caolanmcmahon">comments powered by Disqus.</a></noscript>
+{{/with}}
