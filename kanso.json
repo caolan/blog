@@ -1,5 +1,5 @@
 {
-    "name": "caolan-blog",
+    "name": "blog",
     "version": "0.0.1",
     "description": "Blog CouchApp for caolanmcmahon.com",
     "load": "lib/app",
