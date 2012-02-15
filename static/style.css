@@ -358,3 +358,13 @@ ul.blogposts li .meta .extra {
 #disqus_thread h3 {
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', verdana, geneva, sans-serif;
 }
+
+
+#main {
+    opacity: 1;
+    -webkit-transition: opacity .25s linear;
+    -moz-transition: opacity .25s linear;
+    -o-transition: opacity .25s linear;
+    -ms-transition: opacity .25s linear;
+    transition: opacity .25s linear;
+}

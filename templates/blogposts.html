@@ -1,21 +1,23 @@
 {{{include "navigation.html"}}}
 
-<h1>Caolan McMahon</h1>
+<div id="main">
+  <h1>Caolan McMahon</h1>
 
-<ul class="blogposts">
-  {{#each rows}}
-    {{#with value}}
-      <li class="{{#if published}}published{{else}}draft{{/if}}">
-        <h2><a href="{{baseURL}}/posts/{{slug}}">{{title}}</a></h2>
-        <div class="meta">
-          {{#if published}}<span class="date">{{pp_date}}</span>{{else}}<span class="warning">Draft</span>{{/if}}
-          <div class="extra">
-            <a href="{{baseURL}}/posts/{{slug}}#disqus_thread" class="comments">Comments and Reactions</a>
+  <ul class="blogposts">
+    {{#each rows}}
+      {{#with value}}
+        <li class="{{#if published}}published{{else}}draft{{/if}}">
+          <h2><a href="{{baseURL}}/posts/{{slug}}">{{title}}</a></h2>
+          <div class="meta">
+            {{#if published}}<span class="date">{{pp_date}}</span>{{else}}<span class="warning">Draft</span>{{/if}}
+            <div class="extra">
+              <a href="{{baseURL}}/posts/{{slug}}#disqus_thread" class="comments">Comments and Reactions</a>
+            </div>
           </div>
-        </div>
-        {{{intro_html}}}
-        <p><a href="{{baseURL}}/posts/{{slug}}">Read more...</a></p>
-      </li>
-    {{/with}}
-  {{/each}}
-</ul>
+          {{{intro_html}}}
+          <p><a href="{{baseURL}}/posts/{{slug}}">Read more...</a></p>
+        </li>
+      {{/with}}
+    {{/each}}
+  </ul>
+</div>
