@@ -5,10 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
     <title>{{title}}</title> 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/caolan" /> 
-    <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Radley' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://yandex.st/highlightjs/5.16/styles/github.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700|PT+Serif:400,700,400italic,700italic|Radley' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{baseURL}}/static/github.min.css" />
     <link rel="stylesheet" type="text/css" href="{{baseURL}}/static/style.css" /> 
 
   </head> 
@@ -18,8 +16,25 @@
       {{{content}}}
     </div>
 
+    <script>
+      // test if background-clip: text is supported
+      // - do this early since the js can take a while to load
+      var div = document.createElement('div');
+      var prefixes = ['-webkit-', '-moz-', '-o-', '-ms-'];
+      div.style.cssText = prefixes.join('background-clip:text;');
+      if (!!div.style.cssText.replace(/\s/g,'').length) {
+        document.body.className = 'bgcliptext';
+      }
+    </script>
+    <!--[if IE]>
+    <script>
+      // IE gives a false positive for the bgcliptext test above, so we must
+      // just always disable it for IE until the test can be improved.
+      document.body.className = '';
+    </script>
+    <![endif]-->
+
     <script type="text/javascript" src="{{baseURL}}/static/jquery-1.4.2.min.js"></script>
-    <script type="text/javascript" src="{{baseURL}}/static/json2.js"></script>
     <script type="text/javascript" src="{{baseURL}}/static/highlight.pack.js"></script>
     <script type="text/javascript" src="{{baseURL}}/modules.js"></script>
     <script type="text/javascript" src="{{baseURL}}/duality.js"></script>
