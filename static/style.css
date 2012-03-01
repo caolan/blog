@@ -237,7 +237,7 @@ ul.blogposts li .meta .extra {
     -ms-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
     transform: rotate(-5deg);
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #bbb;
     border-left: 1px solid #ccc;
     border-top: 1px solid white;
     border-right: 1px solid white;
@@ -289,12 +289,13 @@ ul.blogposts li .meta .extra {
 .paper {
     padding: 1em 1em 1.618em 1em;
     position: relative;  
-    background-color: #fff;  
-    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(100, 100, 100, 0.025);  
-    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(100, 100, 100, 0.025);  
-    -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(100, 100, 100, 0.025);  
-    -ms-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(100, 100, 100, 0.025);  
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(100, 100, 100, 0.025);  
+    /*background-color: #fff;  */
+    background: url(groovepaper.png);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3), inset 0 0 50px rgba(100, 100, 100, 0.025);  
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3), inset 0 0 50px rgba(100, 100, 100, 0.025);  
+    -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3), inset 0 0 50px rgba(100, 100, 100, 0.025);  
+    -ms-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3), inset 0 0 50px rgba(100, 100, 100, 0.025);  
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3), inset 0 0 50px rgba(100, 100, 100, 0.025);  
 }
 .paper img {
     padding: 0 26px 26px 26px;
