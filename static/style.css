@@ -59,10 +59,11 @@ h1 {
   mask-image: url(groovepaper_mask.png);
   text-shadow: 0 1px 0 white;
 }
+/* for variable word sizes in headlines */
 h1 .small {
   font-size: 85%;
 }
-h1.sitename {
+h1.big {
   padding: 0.146em 1em;
   text-align: center;
   font-size: 68px;
@@ -99,6 +100,9 @@ h2, h3, h4 {
   -ms-border-radius: 3px;
   border-radius: 3px;
 }
+#navigation li.selected a:hover {
+  text-decoration: none;
+}
 #navigation a {
   padding: 0.326em 1em;
   -webkit-border-radius: 3px;
@@ -117,10 +121,12 @@ h2, h3, h4 {
   font-style: normal;
   color: white;
   text-shadow: 0 -1px 0 black;
+  /*
   -webkit-mask-image: url(groovepaper_mask.png);
   -o-mask-image: url(groovepaper_mask.png);
   -moz-mask-image: url(groovepaper_mask.png);
-  mask-image: url(groovepaper-mask.png);
+  mask-image: url(groovepaper_mask.png);
+  */
 }
 .meta {
   font-family: 'Radley', serif;
