@@ -11,7 +11,7 @@ body {
   /*width: 600px;*/
   width: 580px;
   font-size: 16px;
-  background: url(groovepaper.png);
+  /*background: url(groovepaper.png);*/
 }
 a {
   font-style: italic;
@@ -45,6 +45,24 @@ h1 a, h2 a, h3 a, h4 a {
   color: inherit;
 }
 h1 {
+  padding: 0.618em 1em;
+  text-align: center;
+  font-size: 52px;
+  line-height: 1;
+  word-spacing: 0.146em;
+  letter-spacing: -2px;
+  color: #000;
+  position: relative;
+  -webkit-mask-image: url(groovepaper_mask.png);
+  -o-mask-image: url(groovepaper_mask.png);
+  -moz-mask-image: url(groovepaper_mask.png);
+  mask-image: url(groovepaper_mask.png);
+  text-shadow: 0 1px 0 white;
+}
+h1 .small {
+  font-size: 85%;
+}
+h1.sitename {
   padding: 0.146em 1em;
   text-align: center;
   font-size: 68px;
@@ -56,11 +74,8 @@ h1 {
   -webkit-mask-image: url(groovepaper_mask.png);
   -o-mask-image: url(groovepaper_mask.png);
   -moz-mask-image: url(groovepaper_mask.png);
-  mask-image: url(groovepaper-mask.png);
+  mask-image: url(groovepaper_mask.png);
   text-shadow: 0 1px 0 white;
-}
-h1 .small {
-  font-size: 85%;
 }
 h2, h3, h4 {
   text-shadow: 0px 1px 0 white;
