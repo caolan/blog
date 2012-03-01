@@ -355,3 +355,11 @@ ul.blogposts li .meta .extra {
     -ms-transition: opacity .25s linear;
     transition: opacity .25s linear;
 }
+
+
+/* don't resize paragraphs etc automatically on mobile devices using webkit */
+@media only screen and (max-device-width: 480px), only screen and (device-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        -webkit-text-size-adjust: none;
+    }
+}
