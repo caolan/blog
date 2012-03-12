@@ -26,8 +26,11 @@ a img {
     border: none;
 }
 p {
-  text-align: justify;
   margin-bottom: 1.618em;
+}
+#main .main p,
+#main .blogposts p {
+  text-align: justify;
 }
 #main .main p:first-child:first-line {
   font-weight: bold;
