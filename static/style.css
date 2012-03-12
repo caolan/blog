@@ -29,7 +29,7 @@ p {
   text-align: justify;
   margin-bottom: 1.618em;
 }
-p:first-child:first-line {
+#main .main p:first-child:first-line {
   font-weight: bold;
   text-shadow: 0 1px 0 white;
 }
